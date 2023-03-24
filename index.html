@@ -15,17 +15,25 @@
     <link rel="stylesheet" href="/index.css" />
   </head>
   <body class="bg-dark text-white">
-
 <div class="container d-flex flex-column justify-content-center align-items-center">
+
+    <p id="welcome-el"></p>
+
     <h1 class="">People entered:</h1>
 
     <h2 id="count-el" class="text-danger">0</h2>
 
-    <button id="increment-btn" class="btn-danger" onclick="increment()">
+    <button class="btn-danger" id="increment-btn" onclick="increment()">
       INCREMENT
     </button>
-</div>
 
+    <button class="btn-success" id="save-btn" onclick="save()">
+      SAVE
+    </button>
+
+    <p id="save-el">People enires: </p>
+
+</div>
     <script src="/index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
