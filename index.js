@@ -23,3 +23,13 @@ function save() {
   countEl.textContent = 0
   count = 0
 }
+
+ 
+
+//Saving Data anouncement
+window.addEventListener(
+  'beforeunload', event => {
+    event.preventDefault();
+    event.returnValue = '';
+  }
+);
